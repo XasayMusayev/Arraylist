@@ -1,0 +1,26 @@
+static void Main(string[] args)
+        {
+            ArrayList arraylist = new ArrayList(10);
+            object[] arr = { 2, "xasay", "musayev", "ugur oglu" };
+            
+            arraylist.AddRange(arr);
+            arraylist.TrimToSize();
+
+            arraylist.RemoveAt(2);
+            arraylist.Remove("musayev");
+            arraylist.IndexOf(2);
+            foreach (var item in arraylist)
+            {
+              
+                    Console.WriteLine(item);
+               
+                
+            }
+
+            Console.WriteLine(arraylist.Count);
+            Console.WriteLine(arraylist.Capacity);
+
+
+
+
+        }
